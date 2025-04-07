@@ -11,16 +11,17 @@
     <header id="intestazione">
         <h1>Ilaria Mangialardi</h1>
         <div class="foto-profilo">
-            <!-- Sostituisci con il percorso della tua foto -->
-            <img src="foto-profilo.jpg" alt="Ilaria Mangialardi">
+            <img src="foto profilo.jpg" alt="Ilaria Mangialardi">
+            <h3>Graphic Designer</h3>
         </div>
     </header>
     
     <nav>
         <ul>
             <li><a href="#resume">Chi sono</a></li>
+            <li><a href="#hero">Curriculum</a></li>
             <li><a href="#progetti">I miei lavori</a></li>
-            <li><a href="#hero">Portfolio</a></li>
+            <li><a href="#hero1">Portfolio</a></li>
             <li><a href="#contact">Contattami</a></li>
         </ul>
     </nav>
@@ -39,8 +40,11 @@
             <h2>Esperienza</h2>
             <ul>
                 <li>2021: Alternanza scuola - lavoro</li>
+                
             </ul>
-            
+            <section id="hero">
+            <a href="Curriculum ilaria mangialardi.jpg" class="portfolio-link" target="_blank">Visualizza il mio Curriculum</a>
+            </section>
             <h2>Competenze</h2>
             <div class="skills-container">
                 <div class="skill">
@@ -105,11 +109,11 @@
             </div>
         </section>
 
-        <section id="hero">
-            <h2>PORTFOLIO</h2>
+        <section id="hero1" style="text-align: center;">
+            <h2>Per vedere altri progetti</h2>
             <a href="portfoli_compressed.pdf" class="portfolio-link" target="_blank">Visualizza il mio Portfolio</a>
         </section>
-        
+        <hr style="border: 0; height: 2px; background-color:#F06292; width: 30%; margin: 0 auto;">
         <section id="contact">
             <h2>Contattami</h2>
             <form id="contact-form">
@@ -131,7 +135,7 @@
     </main>
 
     <script>
-        // Script per i pulsanti di scorrimento
+        //per i pulsanti di scorrimento
         document.addEventListener('DOMContentLoaded', function() {
             const container = document.querySelector('.progetti-container');
             const prevBtn = document.querySelector('.prev-btn');
