@@ -151,5 +151,61 @@
             });
         });
     </script>
+    <footer>
+    <div class="footer-content">
+        <div class="contatti-footer">
+            <h3>Contatti</h3>
+            <p><strong>Email:</strong> ilariamangialardi03@gmail.com</p>
+            <p><strong>Telefono:</strong> 3429516747</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Ilaria Mangialardi - Tutti i diritti riservati</p>
+        </div>
+    </div>
+</footer>
+E poi aggiungi questo CSS al tuo file styles.css:
+cssCopiafooter {
+    background-color: #F06292;
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contatti-footer h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.contatti-footer p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .contatti-footer h3 {
+        font-size: 20px;
+    }
+    
+    .contatti-footer p {
+        font-size: 14px;
+    }
+}
+
 </body>
 </html>
