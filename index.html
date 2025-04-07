@@ -7,44 +7,149 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-image:url>
-    <header>
+<body>
+    <header id="intestazione">
         <h1>Ilaria Mangialardi</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Chi sono</a></li>
-               
-                <li><a href="#work">Lavori</a></li>
-                <li><a href="#contact">Contattami</a></li>
-            </ul>
-        </nav>
+        <div class="foto-profilo">
+            <!-- Sostituisci con il percorso della tua foto -->
+            <img src="foto-profilo.jpg" alt="Ilaria Mangialardi">
+        </div>
     </header>
-    <section id="hero">
-        <h2>PORTFOLIO</h2>
-        <p>Graphic Designer con esperienza in marketing e comunicazione.</p>
-        <a href="#about" class="scroll-button">Scopri di più</a>
-    </section>
-    <section id="about">
-        <h2>Ciao, sono Ilaria!</h2>
-        <p>Mi occupo di design e comunicazione visiva. Attualmente vivo in Italia e studio Graphic Design e Art Direction.</p>
-    </section>
-    <section id="resume">
-        <h2>Formazione</h2>
-        <ul>
-            <li>2022: Diploma in Grafica e Comunicazione a Novara IIS Nervi</li>
-            <li>2022 - 2025: Accademia di Belle Arti ACME sede Novara corso Graphic Design e Art Direction</li>
-            
-        </ul>
-        <h2>Esperienza</h2>
-        <ul>
-            <li>2021: Tirocinio formativo</li>
     
+    <nav>
+        <ul>
+            <li><a href="#resume">Chi sono</a></li>
+            <li><a href="#progetti">I miei lavori</a></li>
+            <li><a href="#hero">Portfolio</a></li>
+            <li><a href="#contact">Contattami</a></li>
         </ul>
-    </section>
-    <section id="contact">
-        <h2>Contattami</h2>
-        <p>Email: ilaria.mangialardi03@gmail.com</p>
-        <p>Telefono: 3429516747</p>
-    </section>
+    </nav>
+    
+    <main>
+        <section id="resume">
+            <h2>Ciao, sono Ilaria!</h2>
+            <p>Mi occupo di design e comunicazione visiva, ambiti che mi appassionano profondamente e nei quali cerco continuamente di migliorarmi e aggiornarmi. Attualmente vivo in Italia, un paese ricco di storia e ispirazione artistica, dove sto approfondendo i miei studi in Graphic Design e Art Direction, con l'obiettivo di sviluppare competenze sempre più avanzate e creative nel settore.</p>
+            
+            <h2>Formazione</h2>
+            <ul>
+                <li>2022: Diploma in Grafica e Comunicazione a Novara IIS Nervi</li>
+                <li>2022 - 2025: Accademia di Belle Arti ACME sede Novara corso Graphic Design e Art Direction</li>
+            </ul>
+            
+            <h2>Esperienza</h2>
+            <ul>
+                <li>2021: Alternanza scuola - lavoro</li>
+            </ul>
+            
+            <h2>Competenze</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-name">Illustrator</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%;">95%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Photoshop</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">InDesign</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Inglese</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="progetti">
+            <h2>I miei lavori</h2>
+            <div class="progetti-container">
+                <div class="progetto">
+                    <img src="progetto1.jpg" alt="Progetto 1">
+                    <h3>Progetto 1</h3>
+                    <p>Descrizione del progetto 1</p>
+                </div>
+                <div class="progetto">
+                    <img src="progetto2.jpg" alt="Progetto 2">
+                    <h3>Progetto 2</h3>
+                    <p>Descrizione del progetto 2</p>
+                </div>
+                <div class="progetto">
+                    <img src="progetto3.jpg" alt="Progetto 3">
+                    <h3>Progetto 3</h3>
+                    <p>Descrizione del progetto 3</p>
+                </div>
+                <div class="progetto">
+                    <img src="progetto4.jpg" alt="Progetto 4">
+                    <h3>Progetto 4</h3>
+                    <p>Descrizione del progetto 4</p>
+                </div>
+                <div class="progetto">
+                    <img src="progetto5.jpg" alt="Progetto 5">
+                    <h3>Progetto 5</h3>
+                    <p>Descrizione del progetto 5</p>
+                </div>
+            </div>
+            <div class="scroll-buttons">
+                <button class="prev-btn">Precedente</button>
+                <button class="next-btn">Successivo</button>
+            </div>
+        </section>
+
+        <section id="hero">
+            <h2>PORTFOLIO</h2>
+            <a href="portfoli_compressed.pdf" class="portfolio-link" target="_blank">Visualizza il mio Portfolio</a>
+        </section>
+        
+        <section id="contact">
+            <h2>Contattami</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="messaggio">Messaggio</label>
+                    <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Invia Messaggio</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: ilariamangialardi03@gmail.com</p>
+                <p>Telefono: 3429516747</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Script per i pulsanti di scorrimento
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.progetti-container');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            const progettoWidth = document.querySelector('.progetto').offsetWidth + 30; // larghezza + margin
+            
+            prevBtn.addEventListener('click', function() {
+                container.scrollBy({ left: -progettoWidth, behavior: 'smooth' });
+            });
+            
+            nextBtn.addEventListener('click', function() {
+                container.scrollBy({ left: progettoWidth, behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
 </html>
