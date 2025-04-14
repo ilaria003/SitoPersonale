@@ -44,7 +44,83 @@ h1 {
     object-fit: cover;
     border: 5px solid #F06292;
 }
+/* Stili per il burger menu - solo per telefono */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
 
+.burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Stile per il menu quando è attivo il burger */
+.nav-list {
+    display: flex; /* mantieni il display flex di default */
+}
+
+.nav-list.show {
+    display: flex;
+}
+
+/* Animazione per il burger menu quando è attivo */
+.burger-menu.active .burger-line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-menu.active .burger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active .burger-line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Media query SOLO per telefono */
+@media (max-width: 480px) {
+    .burger-menu {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    
+    nav {
+        position: relative;
+        padding: 15px 0 50px; 
+    }
+    
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    .nav-list {
+        display: none;
+    }
+    
+    .nav-list.show {
+        display: flex;
+        animation: fadeIn 0.5s;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+}
 nav {
     background-color: #F06292;
     padding: 15px 0;
@@ -312,7 +388,7 @@ h2 {
     background-color: #C2185B;
 }
 
-/* CSS del footer spostato fuori dalla media query */
+
 footer {
     background-color: #F06292;
     color: white;
