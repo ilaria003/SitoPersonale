@@ -140,8 +140,7 @@
             const container = document.querySelector('.progetti-container');
             const prevBtn = document.querySelector('.prev-btn');
             const nextBtn = document.querySelector('.next-btn');
-            const progettoWidth = document.querySelector('.progetto').offsetWidth + 30; // larghezza + margin
-            
+            const progettoWidth = document.querySelector('.progetto').offsetWidth + 30; 
             prevBtn.addEventListener('click', function() {
                 container.scrollBy({ left: -progettoWidth, behavior: 'smooth' });
             });

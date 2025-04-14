@@ -165,11 +165,11 @@ h2 {
     gap: 20px;
     padding: 10px 0;
     margin: 20px 0;
-    scrollbar-width: none; ì
+    scrollbar-width: none;
 }
 
 .progetti-container:-webkit-scrollbar {
-    display: none; ì
+    display: none; 
 }
 
 .progetto {
@@ -222,7 +222,7 @@ h2 {
     background-color: #FCE4EC;
     margin-top: 0;
 }
-#hero1  text-align: center;
+#hero1 {  text-align: center;
     padding: 40px 20px;
     background-color: #FCE4EC;
     margin-top: 0;
@@ -404,3 +404,4 @@ h2 {
             font-size: 14px;
         }
     }
+}
