@@ -60,15 +60,6 @@ h1 {
     transition: 0.4s;
 }
 
-/* Stile per il menu quando è attivo il burger */
-.nav-list {
-    display: flex; /* mantieni il display flex di default */
-}
-
-.nav-list.show {
-    display: flex;
-}
-
 /* Animazione per il burger menu quando è attivo */
 .burger-menu.active .burger-line:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
