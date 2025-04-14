@@ -73,14 +73,21 @@ h1 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Media query SOLO per telefono */
 @media (max-width: 480px) {
-    .burger-menu {
-        display: block;
-        position: absolute;
-        top: 15px;
-        right: 20px;
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding-top: 15px;
+        background-color: #F06292;
     }
+
+    .nav-list.show {
+        display: flex;
+        animation: fadeIn 0.5s;
+    }
+}
     
     nav {
         position: relative;
