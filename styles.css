@@ -246,20 +246,22 @@ h2 {
 }
 
 .progetto {
-    min-width: 280px;
-    flex: 0 0 auto;
+    width: 280px; 
+    flex: 0 0 280px;
     scroll-snap-align: start;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .progetto img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 5px;
+    height: auto;
+    max-height: 250px; 
+    object-fit: contain; 
+    border-radius: 20px;
 }
 
 .progetto h3 {
