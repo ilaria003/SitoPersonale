@@ -363,14 +363,17 @@ h2 {
 .form-group textarea {
     resize: vertical;
 }
-.form-group {
-    display: flex;
-    align-items: center; /* centra verticalmente checkbox e testo */
-    gap: 8px; /* spazio orizzontale fra checkbox e scritta */
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
 }
 
-.form-group input[type="checkbox"] {
-    margin: 0; /* rimuove margini extra del checkbox */
+.form-group label[for="privacy"] {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
 }
 .submit-btn {
     background-color: #E91E63;
