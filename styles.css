@@ -390,7 +390,21 @@ h2 {
 .submit-btn:hover {
     background-color: #C2185B;
 }
+/* Modifica per il checkbox del consenso privacy */
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    vertical-align: top;
+    display: inline-block;
+}
 
+.form-group label[for="privacy"] {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    width: calc(100% - 30px); /* Lascia spazio per il checkbox */
+    line-height: 1.4;
+}
 footer {
     background-color: #F06292;
     color: white;
