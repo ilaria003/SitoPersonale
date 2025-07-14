@@ -12,15 +12,12 @@ body {
     margin: 0; 
 }
 
-
 #intestazione {
     background-color: #F8BBD0;
     padding: 20px 0 0 0;
     margin: 0;
     width: 100%;
-    
     margin-bottom: 0;
-  
     padding-bottom: 20px;
 }
 
@@ -44,6 +41,7 @@ h1 {
     object-fit: cover;
     border: 5px solid #F06292;
 }
+
 /* Stili per il burger menu - solo per telefono */
 .burger-menu {
     display: none;
@@ -78,8 +76,11 @@ h1 {
     .burger-menu {
         display: block;
         position: absolute;
-        top: 15px;
+        top: 50%; /* centra verticalmente */
         right: 20px;
+        transform: translateY(-50%); /* corregge lo spostamento */
+        cursor: pointer;
+        z-index: 1000;
     }
     
     nav {
@@ -112,13 +113,14 @@ h1 {
         to { opacity: 1; }
     }
 }
+
 nav {
     background-color: #F06292;
     padding: 15px 0;
     margin: 0; 
     width: 100%;
-  
     border-top: none;
+    position: relative; /* aggiunto per riferimento del burger */
 }
 
 nav ul {
@@ -145,7 +147,6 @@ nav ul li a:hover {
     color: #FCE4EC;
 }
 
-
 main {
     width: 100%;
     max-width: 1200px;
@@ -166,7 +167,6 @@ h2 {
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
-
 
 #resume {
     background-color: #FCE4EC;
@@ -190,6 +190,7 @@ h2 {
     display: block;
     margin: 10px auto;
 }
+
 .skills-container {
     margin-top: 30px;
 }
@@ -225,7 +226,6 @@ h2 {
     transition: width 1s ease-in-out;
 }
 
-
 #progetti {
     background-color: #FCE4EC;
     margin-bottom: 10px;
@@ -253,7 +253,6 @@ h2 {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
 }
 
 .progetto img {
@@ -290,19 +289,20 @@ h2 {
     background-color: #C2185B;
 }
 
-
 #hero {
     text-align: center;
     padding: 40px 20px;
     background-color: #FCE4EC;
     margin-top: 0;
 }
+
 #hero1 {  
     text-align: center;
     padding: 40px 20px;
     background-color: #FCE4EC;
     margin-top: 0;
 }
+
 .portfolio-link {
     display: block;
     width: fit-content;
@@ -319,7 +319,6 @@ h2 {
 .portfolio-link:hover {
     background-color: #C2185B;
 }
-
 
 #contact {
     background-color: #FCE4EC;
@@ -380,7 +379,6 @@ h2 {
 .submit-btn:hover {
     background-color: #C2185B;
 }
-
 
 footer {
     background-color: #F06292;
