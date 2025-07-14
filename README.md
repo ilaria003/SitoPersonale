@@ -1,7 +1,12 @@
-# Portfolio - Ilaria Mangialardi
-
-Benvenuto nel repository del mio portfolio online. Ho creato questo sito per presentare il mio percorso formativo, le mie competenze e i progetti che ho realizzato come graphic designer. L’obiettivo è comunicare la mia identità professionale e creativa in modo chiaro e funzionale.
-
+# Accademia di Belle Arti ACME sede Novara
+- **Nome**: Ilaria Mangialardi
+- **Matricola**: 1032
+- **Anno Accademico**: 2024 - 2025
+- **Corso**: Web Design
+- **Professore**: Matteo Baccan
+## Link
+- **GitHub**: https://github.com/ilaria003/SitoPersonale
+- **Netlify**: https://ilariamangialardi.netlify.app/
 ## Descrizione
 
 Nel mio portfolio puoi trovare:  
